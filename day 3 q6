@@ -1,0 +1,25 @@
+//Write a program to swap two numbers using a third variable.
+#include <stdio.h>
+
+int main() {
+    int a, b, temp;
+
+    // Ask the user to enter two numbers
+    printf("Enter first number (a): ");
+    scanf("%d", &a);
+
+    printf("Enter second number (b): ");
+    scanf("%d", &b);
+
+    // Swap the numbers using a third variable
+    temp = a;  // Store value of a in temp
+    a = b;     // Assign value of b to a
+    b = temp;  // Assign value of temp (original a) to b
+
+    // Show the swapped values
+    printf("After swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    return 0;
+}
